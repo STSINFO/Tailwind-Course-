@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+      <!-- Card Container -->
+      <div
+        class="bg-white text-black rounded-3xl shadow-lg p-6 m-3 space-y-10 md:p-40"
+      >
+        <!-- Menu Container -->
+        <div
+          class="flex flex-col items-center justify-center space-y-8 md:flex-row md:space-x-8 md:space-y-0 md:justify-end mb-24"
+        >
+          <!-- Menu Item 1 -->
+          <div class="group">
+            <a href="#" class="text-sm">Vector</a>
+            <div
+              class="mx-2 mt-2 duration-200 border-b-2 border-black opacity-0 group-hover:opacity-100"
+            ></div>
+          </div>
+
+          <!-- Menu Item 1 -->
+          <div class="group">
+            <a href="#" class="text-sm">Illustrations</a>
+            <div
+              class="mx-2 mt-2 duration-200 border-b-2 border-black opacity-0 group-hover:opacity-100"
+            ></div>
+          </div>
+
+          <!-- Menu Item 1 -->
+          <div class="group">
+            <a href="#" class="text-sm">Images</a>
+            <div
+              class="mx-2 mt-2 duration-200 border-b-2 border-black opacity-0 group-hover:opacity-100"
+            ></div>
+          </div>
+
+          <!-- Menu Item 1 -->
+          <div class="group">
+            <a href="#" class="text-sm">Icons</a>
+            <div
+              class="mx-2 mt-2 duration-200 border-b-2 border-black opacity-0 group-hover:opacity-100"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Input & Button Container -->
+        <div
+          class="flex flex-col justify-between space-y-8 md:flex-row md:space-y-0"
+        >
+          <!-- Input  -->
+          <div class="flex justify-between items-center">
+            <input
+              type="text"
+              class="ml-6 md:w-80 px-8 py-3 focus:outline-none border-2 border-black-400 border-none"
+              placeholder="Search"
+              placeholder="font-normal"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 text-gray-300 duration-200 hover:scale-110"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Upload Button -->
+          <button
+            class="px-14 text-lg py-3 uppercase border-2 border-black bg-black text-white hover:bg-white hover:text-black duration-200 rounded-md"
+          >
+            Upload
+          </button>
+        </div>
+
+        <!-- Grid Container -->
+        <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          <!-- Image 1 -->
+          <div class="relative group">
+            <img src="./images/image1.jpg" alt="" class="w-72 mx-auto" />
+            <div
+              class="absolute flex items-center justify-between opacity-0 p-2 px-4 bg-black bottom-0 left-0 right-0 z-10 group-hover:opacity-40 duration-200"
+            >
+              <div class="text-white">
+                <p class="text-sm">Abstract Painting</p>
+                <p class="text-xs">252 Likes - 353 Shares</p>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- Image 1 -->
+          <div class="relative group">
+            <img src="./images/image2.jpg" alt="" class="w-72 mx-auto" />
+            <div
+              class="absolute flex items-center justify-between opacity-0 p-2 px-4 bg-black bottom-0 left-0 right-0 z-10 group-hover:opacity-40 duration-200"
+            >
+              <div class="text-white">
+                <p class="text-sm">Abstract Painting</p>
+                <p class="text-xs">252 Likes - 353 Shares</p>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- Image 1 -->
+          <div class="relative group">
+            <img src="./images/image3.jpg" alt="" class="w-72 mx-auto" />
+            <div
+              class="absolute flex items-center justify-between opacity-0 p-2 px-4 bg-black bottom-0 left-0 right-0 z-10 group-hover:opacity-40 duration-200"
+            >
+              <div class="text-white">
+                <p class="text-sm">Abstract Painting</p>
+                <p class="text-xs">252 Likes - 353 Shares</p>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- Image 1 -->
+          <div class="relative group">
+            <img src="./images/image4.jpg" alt="" class="w-72 mx-auto" />
+            <div
+              class="absolute flex items-center justify-between opacity-0 p-2 px-4 bg-black bottom-0 left-0 right-0 z-10 group-hover:opacity-40 duration-200"
+            >
+              <div class="text-white">
+                <p class="text-sm">Abstract Painting</p>
+                <p class="text-xs">252 Likes - 353 Shares</p>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- Image 1 -->
+          <div class="relative group">
+            <img src="./images/image5.jpg" alt="" class="w-72 mx-auto" />
+            <div
+              class="absolute flex items-center justify-between opacity-0 p-2 px-4 bg-black bottom-0 left-0 right-0 z-10 group-hover:opacity-40 duration-200"
+            >
+              <div class="text-white">
+                <p class="text-sm">Abstract Painting</p>
+                <p class="text-xs">252 Likes - 353 Shares</p>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- Image 1 -->
+          <div class="relative group">
+            <img src="./images/image6.jpg" alt="" class="w-72 mx-auto" />
+            <div
+              class="absolute flex items-center justify-between opacity-0 p-2 px-4 bg-black bottom-0 left-0 right-0 z-10 group-hover:opacity-40 duration-200"
+            >
+              <div class="text-white">
+                <p class="text-sm">Abstract Painting</p>
+                <p class="text-xs">252 Likes - 353 Shares</p>
+              </div>
+              <img src="./images/bookmark.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
