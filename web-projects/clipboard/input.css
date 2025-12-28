@@ -6,22 +6,30 @@
   h3 {
     @apply text-4xl font-bold mb-8 text-darkGrayishBlue md:text-5xl;
   }
+  h5 {
+    @apply text-2xl text-darkGrayishBlue font-bold mb-4;
+  }
 }
 
 .section-container {
   @apply max-w-6xl mx-auto text-center px-10;
 }
 
-.button-container {
-  @apply flex flex-col justify-center text-xl text-white w-full space-y-6 md:flex-row md:space-y-0 md:space-x-4;
+.section-content {
+  @apply max-w-3xl text-grayishBlue mx-auto;
 }
 
-.description {
-  @apply max-w-3xl mx-auto;
+.button-container {
+  @apply flex flex-col  justify-center w-full space-y-4 md:flex-row md:space-y-0 md:space-x-4;
 }
 
 .btn {
-  @apply py-4 px-8 rounded-full duration-200 shadow-lg  hover:opacity-80;
+  @apply px-8 py-4 rounded-full  hover:opacity-80 text-white shadow-lg duration-200 text-xl;
+}
+
+.ficon:hover {
+  filter: invert(32%) sepia(94%) contrast(921%) brightness(101%)
+    hue-rotate(101deg);
 }
 body {
   background-image: url("../images/bg-header-desktop.png");
